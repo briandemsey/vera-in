@@ -244,6 +244,23 @@ def process_schools_data(raw_data):
 # =============================================================================
 
 with st.sidebar:
+    # Back arrow to h-edu.solutions
+    st.markdown("""
+        <a href="https://h-edu.solutions" target="_self" style="
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 8px 0;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        ">
+            <span style="font-size: 1.2rem; margin-right: 8px;">←</span>
+            Back to H-EDU
+        </a>
+    """, unsafe_allow_html=True)
+
     # Display Indiana flag
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
