@@ -244,9 +244,13 @@ def process_schools_data(raw_data):
 # =============================================================================
 
 with st.sidebar:
+    # Display Indiana flag
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.image("indiana-flag.svg", width=80)
+
     st.markdown(f"""
-        <div style="text-align: center; padding: 20px 0;">
-            <span style="font-size: 3rem;">🌽</span>
+        <div style="text-align: center; padding: 10px 0 20px 0;">
             <h2 style="color: white; margin: 10px 0;">VERA-IN</h2>
             <p style="color: {GOLD}; font-size: 0.9rem;">Verification Engine for Results & Accountability</p>
             <p style="color: rgba(255,255,255,0.6); font-size: 0.8rem;">Indiana • Year Zero</p>
